@@ -2382,6 +2382,10 @@ PlaneObject.prototype.getAircraftData = function() {
             if (data[0]) {
                 this.registration = `${data[0]}`;
             }
+			
+			if (data[4]) {
+				this.ownOp = `${data[4]}`;
+			}
 
             this.dataChanged();
 
